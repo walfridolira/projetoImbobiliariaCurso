@@ -1,18 +1,25 @@
 package geral;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 import principais.Imovel;
 import tela.Construcao;
 
 public class Casa extends Imovel {
-
-	public Casa(String endereço, Double preco) {
-		super(endereço, preco);
-		// TODO Auto-generated constructor stub
+	
+	Scanner scan = new Scanner(System.in);
+	ArrayList<String>casa = new ArrayList<String>();
+	
+	 //Construtor
+	public Casa(String endereço, Double preco, String tipo) {
+		super(endereço, preco, tipo);
+		
 	}
 
 	@Override
 	public String tipoConstrucao() {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
@@ -24,7 +31,7 @@ public class Casa extends Imovel {
 
 	@Override
 	public void adicionarConstrucao(Construcao construcao) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 

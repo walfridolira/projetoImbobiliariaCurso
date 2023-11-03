@@ -4,9 +4,10 @@ import principais.Imovel;
 import tela.Construcao;
 
 public class Loja extends Imovel {
-
-	public Loja(String endereço, Double preco) {
-		super(endereço, preco);
+	
+	 //Construtor
+	public Loja(String endereço, Double preco, String tipo) {
+		super(endereço, preco, tipo);
 		// TODO Auto-generated constructor stub
 	}
 

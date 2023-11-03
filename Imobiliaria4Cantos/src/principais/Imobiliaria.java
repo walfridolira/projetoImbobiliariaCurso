@@ -7,8 +7,8 @@ import tela.Construcao;
 
 public class Imobiliaria extends Imovel{
 	
-	public Imobiliaria(String endereço, Double preco) {
-		super(endereço, preco);
+	public Imobiliaria(String endereço, Double preco, String tipo) {
+		super(endereço, preco, tipo);
 	}
 
 	Scanner scan = new Scanner(System.in);
