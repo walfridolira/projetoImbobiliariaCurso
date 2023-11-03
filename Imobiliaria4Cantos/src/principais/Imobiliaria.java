@@ -5,8 +5,12 @@ import java.util.Scanner;
 
 import tela.Construcao;
 
-public class Imobiliaria implements tela.Construcao{
+public class Imobiliaria extends Imovel{
 	
+	public Imobiliaria(String endereço, Double preco) {
+		super(endereço, preco);
+	}
+
 	Scanner scan = new Scanner(System.in);
 	ArrayList<String>construcoes = new ArrayList<String>();
 	
@@ -60,5 +64,17 @@ public class Imobiliaria implements tela.Construcao{
 	@Override
 	public void informarArea() {
 		
+	}
+
+	@Override
+	public String tipoConstrucao() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Integer countNumComodos() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
