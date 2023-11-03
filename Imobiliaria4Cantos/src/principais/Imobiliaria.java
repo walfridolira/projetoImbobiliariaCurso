@@ -5,12 +5,16 @@ import java.util.Scanner;
 
 import tela.Construcao;
 
-public class Imobiliaria {
+public class Imobiliaria implements tela.Construcao{
 	
 	Scanner scan = new Scanner(System.in);
 	ArrayList<String>construcoes = new ArrayList<String>();
 	
-	void adicionarConstrucao(Construcao construcao){
+	
+	
+	// metodos da interface
+@Override	
+	public void adicionarConstrucao(Construcao construcao){
 	
 		System.out.println("Informe o tipo de construção que deseja inserir(1 - Casa; 2 - Prédio; 3 - Loja; 0 - ): ");
 		int tipo = scan.nextInt();
@@ -42,18 +46,19 @@ public class Imobiliaria {
 		
 		
 	}
-	
-	void removerConstrucao(Construcao construcao) {
+
+	@Override
+	public void removerConstrucao(Construcao construcao) {
 		construcoes.remove(0);
 	}
 	
-	String listarConstrucoes(Construcao construcao) {
-		return null;
+	@Override
+	public void listarConstrucoes() {
 		
 	}
-
-	Double informarArea(Construcao construcao) {
-		return null;
+	
+	@Override
+	public void informarArea() {
 		
 	}
 }

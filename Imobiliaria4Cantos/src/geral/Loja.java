@@ -5,6 +5,11 @@ import tela.Construcao;
 
 public class Loja extends Imovel {
 
+	public Loja(String endereço, Double preco) {
+		super(endereço, preco);
+		// TODO Auto-generated constructor stub
+	}
+
 	@Override
 	public String tipoConstrucao() {
 		// TODO Auto-generated method stub
@@ -30,7 +35,7 @@ public class Loja extends Imovel {
 	}
 
 	@Override
-	public void listarConstrucao() {
+	public void listarConstrucoes() {
 		// TODO Auto-generated method stub
 		
 	}

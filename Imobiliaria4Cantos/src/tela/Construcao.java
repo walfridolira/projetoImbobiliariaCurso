@@ -6,8 +6,8 @@ public interface Construcao {
 	
 	public void removerConstrucao(Construcao construcao);
 	
-	public void listarConstrucao();
+	public void listarConstrucoes();
 	
-	void informarArea();
+	public void informarArea();
 	
 }
